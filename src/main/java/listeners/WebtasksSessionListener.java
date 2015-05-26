@@ -7,8 +7,7 @@ import javax.servlet.http.HttpSessionListener;
 import org.apache.log4j.Logger;
 
 /**
- * @author nata
- * @version 1.0
+ * @author Sergii Varenyk
  */
 public class WebtasksSessionListener implements HttpSessionListener {
 	private static final Logger LOGGER = Logger.getLogger(WebtasksSessionListener.class);

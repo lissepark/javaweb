@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Created by Sergii on 21.04.2015.
+ * Created by Sergii
  */
 public class DisciplineServiceImpl implements DisciplineServise{
     private DisciplineDao disciplineDao = new DisciplineDaoImpl();

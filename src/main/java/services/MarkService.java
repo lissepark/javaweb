@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Created by Sergii on 15.05.2015.
+ * Created by Sergii
  */
 public interface MarkService {
     int getMarksDisciplines(int idTermDiscipline, int idTerm, int idStudent) throws SQLException;

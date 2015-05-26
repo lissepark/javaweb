@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by Наталья on 08.09.2014.
+ * @author Sergii Varenyk
  */
 public class LogoutController extends AbstractWebtasksServletHandler {
 

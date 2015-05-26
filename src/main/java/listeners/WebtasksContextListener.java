@@ -10,8 +10,7 @@ import services.WebtasksServiceManager;
 import constants.Constants;
 
 /**
- * @author nata
- * @version 1.0
+ * @author Sergii Varenyk
  */
 public class WebtasksContextListener implements ServletContextListener {
 	private static final Logger LOGGER = Logger.getLogger(WebtasksContextListener.class);

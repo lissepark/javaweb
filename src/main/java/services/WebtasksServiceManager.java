@@ -6,10 +6,6 @@ import org.apache.log4j.Logger;
 
 import database.DataService;
 
-/**
- * @author nata
- * @version 1.0
- */
 public final class WebtasksServiceManager {
 	private static final Logger LOGGER = Logger.getLogger(WebtasksServiceManager.class);
 	private static final String WEBTASKS_SERVICES_MANAGER = "WEBTASKS_SERVICES_MANAGER";

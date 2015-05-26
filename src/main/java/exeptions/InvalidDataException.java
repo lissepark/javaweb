@@ -1,11 +1,9 @@
 package exeptions;
 
 /**
- * @author nata
- * @version 1.0
+ * @author Sergii Varenyk
  */
 public class InvalidDataException extends WebtasksException {
-	private static final long serialVersionUID = 2025717014644106349L;
 
 	public InvalidDataException(String message) {
 		super(message);

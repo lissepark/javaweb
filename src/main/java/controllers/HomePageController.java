@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by Наталья on 08.09.2014.
+ * @author Sergii Varenyk
  */
 public class HomePageController extends AbstractWebtasksServletHandler{
     @Override

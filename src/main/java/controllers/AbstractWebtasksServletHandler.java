@@ -48,49 +48,47 @@ public abstract class AbstractWebtasksServletHandler extends HttpServlet
 	@Override
 	protected final void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doDelete(HttpServletRequest req,
 			HttpServletResponse resp) throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doOptions(HttpServletRequest req,
 			HttpServletResponse resp) throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doHead(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doPut(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
 	@Override
 	protected final void doTrace(HttpServletRequest req,
 			HttpServletResponse resp) throws ServletException, IOException {
-		handleRequest0(req, resp);
+		handleRequestGP(req, resp);
 	}
 
-	private void handleRequest0(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	private void handleRequestGP(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
 		try {
-			preHandleRequest(request, response);
 			handleRequest(request, response);
 		} catch (Exception e) {
 			LOGGER.error("Application can't fulfil this request", e);
@@ -101,10 +99,6 @@ public abstract class AbstractWebtasksServletHandler extends HttpServlet
 	protected abstract void handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception;
 
-	protected void preHandleRequest(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-
-	}
 
 	protected final DataService getDataService() {
 		return dataService;

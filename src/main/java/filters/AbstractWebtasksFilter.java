@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author nata
- * @version 1.0
+ * @author Sergii Varenyk
  */
 public abstract class AbstractWebtasksFilter implements Filter {
 

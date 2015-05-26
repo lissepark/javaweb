@@ -9,7 +9,9 @@ import org.apache.log4j.Logger;
 
 import constants.Constants;
 
-//работает только на многопоточность
+/**
+ Class for multi-threading; 5 pools
+*/
 
 public class DataService{
 	private static final Logger LOGGER = Logger

@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Created by Sergii on 15.05.2015.
+ * Created by Sergii
  */
 public class MarkServiceImpl implements MarkService {
     MarkDao markDao = new MarkDaoImpl();

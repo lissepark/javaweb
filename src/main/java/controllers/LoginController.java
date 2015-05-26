@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.lang.StringUtils;
 
 import services.LoginService;
-import services.impl.LogilServiceImpl;
+import services.impl.LoginServiceImpl;
 import constants.Constants;
 import dao.impl.RoleDaoImpl;
 import dao.RoleDao;
@@ -19,9 +19,8 @@ import entity.Role;
 import exeptions.InvalidDataException;
 
 public class LoginController extends AbstractWebtasksServletHandler {
-	private static final long serialVersionUID = 4544737546336836686L;
 
-	private final Map<Integer, String> mappings = new HashMap<Integer, String>();
+	private final Map<Integer, String> mappings = new HashMap<>();
 
 	public LoginController() {
 		mappings.put(ROLE_ADMIN, "/admin");
@@ -45,8 +44,7 @@ public class LoginController extends AbstractWebtasksServletHandler {
 		gotoToJSP("/login.jsp", request, response);
 	}
 
-	protected void validateRequest(String username, String password)
-			throws InvalidDataException {
+	protected void validateRequest(String username, String password) throws InvalidDataException {
 		if (StringUtils.isBlank(username)) {
 			throw new InvalidDataException("username");
 		}
@@ -63,7 +61,7 @@ public class LoginController extends AbstractWebtasksServletHandler {
 		try {
             Integer idRole = Integer.parseInt(request.getParameter("role"));
 			validateRequest(login, password);
-			LoginService loginService = new LogilServiceImpl();
+			LoginService loginService = new LoginServiceImpl();
 			Account a = loginService.login(login, password, idRole);
 			String mapping = mappings.get(idRole);
 			if (mapping != null) {
@@ -78,6 +76,8 @@ public class LoginController extends AbstractWebtasksServletHandler {
 			request.setAttribute(Constants.VALIDATION_MESSAGE,
 					e.getMessage());
 			gotoToJSP("login.jsp", request, response);
-		}catch(NumberFormatException ignore){/*NOP*/}
+		}catch(NumberFormatException ignore){
+            gotoToJSP("login.jsp", request, response);
+        }
 	}
 }

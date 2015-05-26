@@ -11,7 +11,7 @@ import entity.Role;
 import exeptions.InvalidDataException;
 import services.LoginService;
 
-public class LogilServiceImpl implements LoginService{
+public class LoginServiceImpl implements LoginService{
 	
 	private AccountDao accountDao = new AccountDaoImpl();
 	private RoleDao roleDao = new RoleDaoImpl();
@@ -29,11 +29,8 @@ public class LogilServiceImpl implements LoginService{
 		List<Role> roles = accountByLogin.getRoles();
 		List<Role> currentRole = roleDao.getRoleById(role);
 
-
         //Предусмотреть правильную!!!!!!
         //На уровне Account
-
-
         // неправильная валидация!!!!!!!!!!
         for (Role role1 : roles) {
             if (role1.getId() == currentRole.get(0).getId())
