@@ -1,9 +1,9 @@
 package constants;
 
 public interface Constants {
-    public static final String CONNECTING_URL = "jdbc:mysql://localhost:3306/students";
-    public static final String CONNECTING_USER = "root";
-    public static final String CONNECTING_PASSWORD = "123456";
+    public static final String CONNECTING_URL = "jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/students";
+    public static final String CONNECTING_USER = "adminwtIVVvw";
+    public static final String CONNECTING_PASSWORD = "yKy_fhGsWs5Q";
 
     public static final int CONNECTING_POOL_SIZE = 5;
 
