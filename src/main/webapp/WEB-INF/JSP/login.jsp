@@ -1,11 +1,6 @@
 <%@ page import="entity.Account" %>
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 
-<div align="right" style="position: fixed; right: 20px; bottom: 0px;">
-	<p>Тестовые аккаунты: "admin / password" , "sergii / 12345"</p>
-	<p>Аккаунт "admin" поддерживает обе роли</p>
-</div>
-
 <div class="login_form_container">
 
     <script>
@@ -54,6 +49,7 @@
             }
         }
     </script>
+
     <div id="parent_popup">
         <div id="popup">
             <div class="form1">
@@ -77,23 +73,16 @@
                             </td>
                             <td id="validpass"></td>
                         </tr>
-                        <tr>
-                            <td class="tdlogin">
-                                <input class="tdlogin" type="submit" name="enter" value="Enter" />
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
 
                         <table id="login_table">
                             <tr>
                                 <td>Выбрать роль:</td>
-                                <td><select name="role" id="opening_list">
-                                    <option value="1">Администратор</option>
-                                    <option value="2">Студент</option>
-                                </select></td>
+                                <td>
+                                    <select name="role" id="opening_list">
+                                        <option value="1">Администратор</option>
+                                        <option value="2">Студент</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr height="60">
                                 <td>&nbsp</td>
@@ -106,7 +95,6 @@
                 </form>
                 <%
                     Integer c = (Integer) request.getAttribute("a");
-                    System.out.println(c);
                     Account b = (Account) request.getAttribute("b");
                     if (b != null) {
                 %>
@@ -140,8 +128,10 @@
                 %>
             </div>
         </div>
+        <div align="right" style="position: fixed; right: 20px; bottom: 0px;">
+            <p>Тестовые аккаунты: "admin / password" , "sergii / 12345"</p>
+            <p>Аккаунт "admin" поддерживает обе роли</p>
+        </div>
     </div>
-
-
 
 </div>

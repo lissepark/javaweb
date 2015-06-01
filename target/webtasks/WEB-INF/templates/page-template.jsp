@@ -53,11 +53,32 @@
         </div>
         <div class="divNadpis2"></div>
     </div>
-    <div class="prosl"></div>
-
-	<div><jsp:include page="logout/logoutLink.jsp" flush="true" /></div>
+    <div class="prosl">
+        <div><jsp:include page="logout/logoutLink.jsp" flush="true" /></div>
+    </div>
 
 	<jsp:include page="${currentPage}" flush="true" />
+
+    <div class="title_page_container">
+        <table cellpadding="0">
+            <tr>
+                <td align="left">
+                    <a	href="${CONTEXT}${CURRENT_MAPPING}/studentsList.php">Студенты</a>
+                </td>
+                <td align="center">
+                    <a	href="${CONTEXT }${CURRENT_MAPPING}/disciplinesList.php">Дисциплины</a>
+                </td>
+                <c:if test="${CURRENT_ROLE eq 1}">
+                    <td align="center"><a href="${CONTEXT }${CURRENT_MAPPING}/marksList.php">
+                        Внести оценки</a>
+                    </td>
+                </c:if>
+                <td align="right">
+                    <a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php">Семестры</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <div class="prosl"></div>
 <div class="divmenu2">

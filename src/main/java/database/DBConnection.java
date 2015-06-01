@@ -59,7 +59,7 @@ public class DBConnection {
 
     private void loadPreparedStatements() {
         try {
-            loadAllRoles = conn.prepareStatement("SELECT * FROM roles");
+            loadAllRoles = conn.prepareStatement("SELECT * FROM `roles`");
             loadAllLogins = conn.prepareStatement("SELECT login, id FROM account");
             loadAccountByLogin = conn.prepareStatement("SELECT * FROM account WHERE login = ?");
             loadRolesById = conn.prepareStatement("SELECT * FROM account_roles WHERE id =?");

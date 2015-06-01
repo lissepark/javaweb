@@ -2,9 +2,8 @@
 
 /* =Global Elements
 -------------------------------------------------------------- */
-
-a {
-	color: blue;
+td {
+    background-color: azure;
 }
 
 table#table_for_error_message {
@@ -114,8 +113,9 @@ select .opening_list {
 /* =Style for terms-pages
 -------------------------------------------------------------- */
 .terms_list_container {
-	margin: -50px auto;
+	margin: 10px auto auto 30px;
 	width: 840px;
+    border:1px solid black;
 }
 
 table#small_font_100_380 {
@@ -147,8 +147,9 @@ table#small_font_100_380 {
 /* =Style for student-page
 -------------------------------------------------------------- */
 .student_list_container {
-	margin: -30px auto;
+	margin: 10px auto auto 30px;
 	width: 840px;
+    border:1px solid black;
 }
 
 .student_creating_container {
@@ -174,8 +175,9 @@ table#student_list_table {
 /* =Style for Discipline-page
 -------------------------------------------------------------- */
 .disciplines_List_container {
-	margin: -25px auto;
+	margin: 10px auto auto 30px;;
 	width: 840px;
+    border:1px solid black;
 }
 
 .ui-widget {
