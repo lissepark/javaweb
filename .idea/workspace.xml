@@ -8,77 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33041e82-ccf0-412d-97fe-18280ab196f8" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Sergii\IdeaProjects\webtask\src\main\webapp\resources\css\images\footimg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergii\IdeaProjects\webtask\target\ROOT.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/constants/Constants.class" afterPath="$PROJECT_DIR$/target/classes/constants/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/constants/Constants.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/constants/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/database/DBConnection.class" afterPath="$PROJECT_DIR$/target/classes/database/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/database/DBConnection.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/database/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/database/DataService.class" afterPath="$PROJECT_DIR$/target/classes/database/DataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/database/DataService.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/database/DataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/entity/Student.class" afterPath="$PROJECT_DIR$/target/classes/entity/Student.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/entity/Student.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/entity/Student.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/StudentCreateController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/StudentCreateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/StudentCreateController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/StudentCreateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/StudentProgressController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/StudentProgressController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/StudentProgressController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/StudentProgressController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/TermCreateController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/TermCreateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermCreateController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermCreateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/TermDeleteController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/TermDeleteController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermDeleteController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermDeleteController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/TermListController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/TermListController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermListController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermListController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/TermModyController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/TermModyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermModyController.class" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/classes/controllers/TermModyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/images/footimg1.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/images/footimg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/resources/css/images/footimg1.jpg" afterPath="$PROJECT_DIR$/target/webtasks/resources/css/images/footimg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/resources/css/images/footimg2.jpg" afterPath="$PROJECT_DIR$/target/webtasks/resources/css/images/footimg2.jpg" />
-      <change type="MODIFICATION" beforePath="C:\Users\Sergii\IdeaProjects\webtask\target\webtasks.war" afterPath="C:\Users\Sergii\IdeaProjects\webtask\target\webtasks.war" />
+      <change type="DELETED" beforePath="C:\Users\Sergii\IdeaProjects\webtask\target\webtasks.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constants/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/constants/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/database/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/StudentCreateController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentCreateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/StudentProgressController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/StudentProgressController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/TermCreateController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/TermCreateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/TermDeleteController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/TermDeleteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/TermListController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/TermListController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/TermModyController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/TermModyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/content1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/content1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/content1.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/content1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/discipline/disciplinesCreatingModifying.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/discipline/disciplinesCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/discipline/disciplinesCreatingModifying.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/discipline/disciplinesCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/discipline/disciplinesList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/discipline/disciplinesList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/discipline/disciplinesList.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/discipline/disciplinesList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/login.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/logout/logoutLink.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/logout/logoutLink.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/templates/logout/logoutLink.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/templates/logout/logoutLink.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/mark/marksList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/mark/marksList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/mark/marksList.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/mark/marksList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/page-template.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/page-template.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/templates/page-template.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/templates/page-template.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsCreatingModifying.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsCreatingModifying.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsList.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsProgress.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/student/studentsProgress.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsProgress.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/student/studentsProgress.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/resources/css/style.css" afterPath="$PROJECT_DIR$/target/webtasks/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/term/termCreatingModifying.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/term/termCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/term/termCreatingModifying.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/term/termCreatingModifying.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/term/termsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/term/termsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/term/termsList.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/main/term/termsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/modules/validationMessage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/modules/validationMessage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/modules/validationMessage.jsp" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/JSP/modules/validationMessage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/webtasks/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/webtasks.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/webtasks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/resources/css/webtasks.css" afterPath="$PROJECT_DIR$/target/webtasks/resources/css/webtasks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webtasks.iml" afterPath="$PROJECT_DIR$/webtasks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/webtasks.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/webtasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webtasks/resources/js/webtasks.js" afterPath="$PROJECT_DIR$/target/webtasks/resources/js/webtasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webtasks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,7 +75,6 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/content1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/main/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/constants/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/DisciplineDeleteController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/logout/logoutLink.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/modules/validationMessage.jsp" />
@@ -167,6 +97,7 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/TermCreateController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/page-template.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/constants/Constants.java" />
       </list>
     </option>
   </component>
@@ -1415,15 +1346,15 @@
       <workItem from="1434208475567" duration="41220000" />
       <workItem from="1434436178489" duration="10628000" />
       <workItem from="1434472304975" duration="20486000" />
-      <workItem from="1434875879191" duration="10609000" />
+      <workItem from="1434875879191" duration="12156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="523862000" />
+    <option name="totallyTimeSpent" value="525409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="586" extended-state="7" />
+    <frame x="-8" y="-8" width="1040" height="586" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1444,10 +1375,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31208792" sideWeight="0.7612245" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31208792" sideWeight="0.7612245" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22755101" sideWeight="0.6941964" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22755101" sideWeight="0.6941964" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22755101" sideWeight="0.30580357" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1611,13 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="2" max-vertical-offset="340">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.307971" vertical-offset="0" max-vertical-offset="408">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -1900,6 +1824,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75" vertical-offset="204" max-vertical-offset="4811">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11929824" vertical-offset="0" max-vertical-offset="510">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>

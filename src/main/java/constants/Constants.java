@@ -1,9 +1,15 @@
 package constants;
 
 public interface Constants {
+    public static final String CONNECTING_URL = "jdbc:mysql://127.11.125.2:3306/s";
+    public static final String CONNECTING_USER = "adminwtIVVvw";
+    public static final String CONNECTING_PASSWORD = "yKy_fhGsWs5Q";
+
+    /* localhost
     public static final String CONNECTING_URL = "jdbc:mysql://localhost:3306/students";
     public static final String CONNECTING_USER = "root";
     public static final String CONNECTING_PASSWORD = "123456";
+    */
 
     public static final int CONNECTING_POOL_SIZE = 5;
 
