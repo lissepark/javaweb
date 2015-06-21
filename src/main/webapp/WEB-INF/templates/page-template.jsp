@@ -9,10 +9,10 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Система управления студентами и их успеваемостью</title>
-    <meta name="description" content="сайт о списке студентов">
+    <title>Students studing management system</title>
+    <meta name="description" content="site about students">
     <meta name="keywords"
-          content="студент, список группы, университет, успеваемость студентов">
+          content="student, group">
     <meta name="author" content="Sergii">
     <link rel="stylesheet" type="text/css"
           href="${CONTEXT }/resources/css/jquery-ui-1.10.4.custom.css" />
@@ -48,33 +48,34 @@
 	<div class="divHead">
         <div class="divNadpis">
                 <p class="p1">
-                    System <br>of management education process
+                    Students studying management<br>System
                 </p>
         </div>
         <div class="divNadpis2"></div>
     </div>
     <div class="prosl">
-        <div><jsp:include page="logout/logoutLink.jsp" flush="true" /></div>
+        <jsp:include page="logout/logoutLink.jsp" flush="true" />
     </div>
-
+    <div class="clear"></div>
+    <div>
 	<jsp:include page="${currentPage}" flush="true" />
-
+    </div>
     <div class="title_page_container">
         <table cellpadding="0">
             <tr>
                 <td align="left">
-                    <a	href="${CONTEXT}${CURRENT_MAPPING}/studentsList.php">Студенты</a>
+                    <a	href="${CONTEXT}${CURRENT_MAPPING}/studentsList.php">Students</a>
                 </td>
                 <td align="center">
-                    <a	href="${CONTEXT }${CURRENT_MAPPING}/disciplinesList.php">Дисциплины</a>
+                    <a	href="${CONTEXT }${CURRENT_MAPPING}/disciplinesList.php">Subjects</a>
                 </td>
                 <c:if test="${CURRENT_ROLE eq 1}">
                     <td align="center"><a href="${CONTEXT }${CURRENT_MAPPING}/marksList.php">
-                        Внести оценки</a>
+                        Add marks</a>
                     </td>
                 </c:if>
                 <td align="right">
-                    <a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php">Семестры</a>
+                    <a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php">Marking periods</a>
                 </td>
             </tr>
         </table>
@@ -85,43 +86,42 @@
     <div class="divmenu21">
         <div class="divmenu211">WELCOME</div>
         <div class="divmenu212">
-            <p class="p3">Do you like green eggs and ham?</p>
-            <p class="p5">I would not like them here or there. I would not
-                like them anywhere. I do not like green eggs and ham. I do not like
-                them, Sam-I-am.</p>
+            <p class="p3">Welcome to our school of programming</p>
+            <p class="p5">We teach such programming:
+            Android programming, Java programming, PHP, HTML/CSS and web-design</p>
         </div>
     </div>
     <div class="divmenu22">
-        <div class="divmenu221">THE BEST STUDENTS</div>
+        <div class="divmenu221">BEST STUDENTS</div>
         <div class="divmenu222">
             <div class="divmenu2221">
-                <img src="${CONTEXT }/resources/css/images/footimg1.jpg">
-                <p class="p3">Mickey's girlfriend</p>
-                <p class="p4">Surprising meeting</p>
-                <p class="p5">Would you like them with a mouse?</p>
+                <img src="${CONTEXT }/resources/css/images/footimg2.jpg">
+                <p class="p3">Andrew</p>
+                <p class="p4">Best results in PHP programming</p>
+                <p class="p5">Best results in PHP programming</p>
             </div>
             <div class="divmenu2222">
-                <img src="${CONTEXT }/resources/css/images/footimg2.jpg">
-                <p class="p3">That Sam-I-am</p>
-                <p class="p4">I do so like...</p>
-                <p class="p5">Would you like them in a house?</p>
+                <img src="${CONTEXT }/resources/css/images/footimg1.jpg">
+                <p class="p3">Anna</p>
+                <p class="p4">Best results in JS programming</p>
+                <p class="p5">Best results in JS programming</p>
             </div>
             <div class="clear"></div>
         </div>
     </div>
     <div class="divmenu23">
-        <div class="divmenu231">NEWS LIST</div>
+        <div class="divmenu231">NEWS</div>
         <div class="divmenu232">
-            <p class="p3">Do you like green eggs and ham?</p>
-            <p class="p5">I do not like them, Sam-I-am.</p>
+            <p class="p3">Android Course</p>
+            <p class="p5">07.09.2015 Android course will start</p>
         </div>
         <div class="divmenu233">
-            <p class="p3">Do you like?</p>
-            <p class="p5">I do not like them.</p>
+            <p class="p3">HTML/CSS Course</p>
+            <p class="p5">04.09.2015 HTML/CSS course will start</p>
         </div>
         <div class="divmenu234">
-            <p class="p3">Do you like green eggs and ham?</p>
-            <p class="p5">I do not like them.</p>
+            <p class="p3">Java Course</p>
+            <p class="p5">01.09.2015 Java course will start</p>
         </div>
     </div>
     <div class="clear"></div>
@@ -130,8 +130,8 @@
     <div class="divFooter1">
         <div class="divFooter11">
             <div class="divFooter111">
-                <p class="p2">While creating the project were used such
-                    software technologies:</p>
+                <p class="p2">While developing the project such
+                    programming technologies were used:</p>
             </div>
             <div class="divFooter112">
                 <div class="divFooter113">

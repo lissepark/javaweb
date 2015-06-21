@@ -54,6 +54,8 @@ public class TermCreateController extends AbstractWebtasksServletHandler {
             int id = Integer.valueOf(disciplines[a]);
             termServise.insertTermDiscipline(termCreatedId,id);
         }
-        forwardRequest("/admin/termsList.php",request,response);
+        List<Term> termList = termServise.getTerms();
+        request.setAttribute("terms", termList);
+        gotoToJSP("/main/term/termsList.jsp", request, response);
     }
 }

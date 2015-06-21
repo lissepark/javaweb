@@ -42,6 +42,16 @@ public class StudentProgressController extends AbstractWebtasksServletHandler {
 
                 MarkService markService = new MarkServiceImpl();
                 List<Marks> markList = markService.getDisciplinesByIdTermIdStudent(idSelectedTerm,idSelectedStudent);
+                Double middleValue = 0.0;
+                Double i =0.0;
+                int summarks=0;
+                for(Marks mark:markList){
+                    int mrk = mark.getMark();
+                    i++;
+                    summarks=summarks+mrk;
+                    middleValue=summarks/i;
+                }
+                request.setAttribute("middleValue",middleValue);
 
                 request.setAttribute("marks", markList);
                 gotoToJSP("/main/student/studentsProgress.jsp", request, response);

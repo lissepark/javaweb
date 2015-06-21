@@ -18,23 +18,40 @@ body {
     height: auto;
     margin: auto;
 }
+.mainBack{
+    margin-right: 50px;
+    font-size: 16px;
+    color:#0000cd;
+    border-bottom:#008000;
+    width: 60px;
+    text-align: center;
+    height: 40px;
+    float:left;
+}
+.mainBack a{
+    display: block;
+}
+
 .prosl{
-    width: 1000px;
+    width: 200px;
     height: 20px;
     margin: auto;
     border: none;
+    float:right;
 }
 .mainimg{
     width: 1000px;
-    height: 300px;
+    height: 306px;
     margin: auto;
     border: none;
 }
 .divmenu1{
     width: 1000px;
-    height: 400px;
-    margin: auto;
-    border: none;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid yellow;
 }
 .divform{
     width: 100%;
@@ -48,19 +65,24 @@ body {
 }
 
 .form1{
-	width: 400px;
-    height: 200px;
+	width: 500px;
+    height: 100%;
     margin: auto;
 }
 
 .divmenu11{
     width: 200px;
-    height: 390px;
+    height: 320px;
     margin: 0 65px 0 65px;
     border: none;
     float: left;
     background-color: #f8f8f8;
 }
+
+.divmenu11 a{
+    display:block;
+}
+
 .divmenu11:hover .divmenu1111{
     background-position: -198px 0px;
 }
@@ -91,27 +113,21 @@ body {
     margin: auto;
     background-image: url("/./resources/css/images/img1menu1.jpg");
 }
-.divmenu1111:hover{
-    cursor: pointer;
-}
+
 .divmenu1112{
     width: 198px;
     height: 140px;
     margin: auto;
     background-image: url("/./resources/css/images/img3menu1.jpg");
 }
-.divmenu1112:hover{
-    cursor: pointer;
-}
+
 .divmenu1113{
     width: 198px;
     height: 140px;
     margin: auto;
     background-image: url("/./resources/css/images/img2menu1.jpg");
 }
-.divmenu1113:hover{
-    cursor: pointer;
-}
+
 .divmenu112{
     width: 178px;
     height: 80px;
@@ -131,50 +147,50 @@ body {
     border:none;
 }
 .divmenu21{
-     width: 228px;
-     height: 298px;
-     margin: 0 10px 0 5px;
-     border:none;
-     float:left;
+    width: 228px;
+    height: 298px;
+    margin: 0 10px 0 5px;
+    border:none;
+    float:left;
 }
 .divmenu22{
-      width: 436px;
-      height: 298px;
-      margin: 0 30px 0 10px;
-      border:none;
-      float:left;
+    width: 436px;
+    height: 298px;
+    margin: 0 30px 0 10px;
+    border:none;
+    float:left;
 }
 .divmenu23{
-       width: 228px;
-       height: 298px;
-       margin: 0 5px 0 20px;
-       border:none;
-       float:left;
+    width: 228px;
+    height: 298px;
+    margin: 0 5px 0 20px;
+    border:none;
+    float:left;
 }
 .divmenu211{
-        width: 226px;
-        height: 30px;
-        margin: auto;
-        border-bottom:2px solid darkgray;
+    width: 226px;
+    height: 30px;
+    margin: auto;
+    border-bottom:2px solid darkgray;
 }
 .divmenu212{
-         width: 226px;
-         height: 236px;
-         margin: 10px auto;
-         border:none;
+    width: 226px;
+    height: 236px;
+    margin: 10px auto;
+    border:none;
 }
 .divmenu221{
-          width: 414px;
-          height: 30px;
-          margin: auto;
-          padding: 0;
-          border-bottom:2px solid darkgray;
+    width: 414px;
+    height: 30px;
+    margin: auto;
+    padding: 0;
+    border-bottom:2px solid darkgray;
 }
 .divmenu222{
-           width: 434px;
-           height: 236px;
-           margin: 10px auto;
-           border:none;
+    width: 434px;
+    height: 236px;
+    margin: 10px auto;
+    border:none;
 }
 .divmenu2221{
     width: 204px;
@@ -240,7 +256,8 @@ body {
     height: 40px;
     margin: 0;
     float:left;
-}.divFooter112 {
+}
+.divFooter112 {
      width: 665px;
      height: 134px;
      margin: 0;
@@ -372,8 +389,8 @@ a{
 
 #popup {
   background: #fff;
-  width: 520px;
-  margin: 10% auto;
+  width: 620px;
+  margin: 8% auto;
   padding: 5px 20px 15px 20px;
   border: 10px solid #8080ff;
   position: relative;
@@ -389,21 +406,23 @@ a{
 }
 
 #validlogin {
-	width:100px;
+	width:100%;
 }
 
-table {
-	width:396px;
-	border:none;
-}
-
-table td{
-	padding:0px;
-	border:none;
+#validpass {
+    width:100%;
 }
 
 .tdlogin {
-	width:100px;
+     width:100px;
+     float:left;
+     margin-top: 10px;
+ }
+
+.tdlogin2 {
+    width:100px;
+    float:left;
+    margin-top: 10px;
 }
 
 #loginInput{
@@ -412,4 +431,8 @@ table td{
 
 #passInput{
 	width:90px;
+}
+
+#login_table{
+    margin-top: 10px;
 }

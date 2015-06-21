@@ -1,26 +1,23 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<div class="link_container">
-	<table>
-		<tr>
-			<td><a href="${CONTEXT}${CURRENT_MAPPING}/home.php">На главную</a></td>
-			<td><a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php">Назад</a></td>
-		</tr>
-	</table>
-</div>
-
-<div class="terms_list_container">
-
+<div class="disciplines_List_container">
+    <div class="mainBack">
+		<a href="${CONTEXT}${CURRENT_MAPPING}/home.php">To Main</a>
+    </div>
+    <div class="mainBack">
+		<a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php">Back</a>
+    </div>
+    <div class="clear"></div>
 
 	<div class="main_line">
 		<c:choose>
 			<c:when test="${CURRENT_BUTTON eq 1}">
-      Для создания семестра заполните следующие данные и нажмите кнопку "Создать".
-  </c:when>
+                To add marking period please fill all the fields and press the button "Add".
+            </c:when>
 			<c:otherwise>
-     Для модификации семестра отредактируйте данные и нажмите кнопку "Применить".
-  </c:otherwise>
+                To modify please write new data and press the button "Submit".
+            </c:otherwise>
 		</c:choose>
 	</div>
 
@@ -37,7 +34,7 @@
 
 	<table class="under_main_table" style="font-family: cursive;">
 		<tr>
-			<td width="210px">Длительность (в неделях)</td>
+			<td width="210px">Duration (weeks)</td>
 			<td>
                 <input type="text" name="duration" class="text"
                        value="${term.duration }" id="text" placeholder="24">
@@ -45,7 +42,7 @@
 		</tr>
 
         <tr>
-            <td width="210px">Имя семестра</td>
+            <td width="210px">Name of the marking period</td>
             <td>
                 <input type="text" name="term_name" class="text"
                        value="${term.name}" id="text1">
@@ -53,7 +50,7 @@
         </tr>
 
 		<tr>
-			<td style="padding-top: 30px" valign="top">Дисциплины в семестре</td>
+			<td style="padding-top: 30px" valign="top">Subjects in the marking period</td>
 			<td style="padding-top: 30px">
 				<table>
 					<tr>
@@ -79,10 +76,10 @@
 					<tr>
 						<td style="padding-top: 20px"><c:choose>
 								<c:when test="${CURRENT_BUTTON eq 1}">
-									<input type="submit" value="Создать" id="button">
+									<input type="submit" value="Add" id="button">
 								</c:when>
 								<c:otherwise>
-									<input type="submit" value="Применить" id="button">
+									<input type="submit" value="Submit" id="button">
 								</c:otherwise>
 							</c:choose></td>
 					</tr>

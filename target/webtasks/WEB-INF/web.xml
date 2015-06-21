@@ -21,7 +21,19 @@
 		</listener-class>
 	</listener>
 
-
+    <!-- Spring -->
+    <!--under development still
+    <servlet>
+        <servlet-name>spitter</servlet-name>
+        <servlet-class>
+            controllers.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>spitter</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping> -->
 
 	<!-- Servlets -->
     <servlet>
@@ -38,7 +50,6 @@
         <url-pattern>/student/disciplinesList.php</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>DisciplineDeleteController</servlet-name>
         <servlet-class>controllers.DisciplineDeleteController
@@ -48,7 +59,6 @@
         <servlet-name>DisciplineDeleteController</servlet-name>
         <url-pattern>/admin/disciplinesDelete.php</url-pattern>
     </servlet-mapping>
-
 
     <servlet>
         <servlet-name>TermListController</servlet-name>
@@ -104,7 +114,6 @@
         <url-pattern>/admin/disciplinesCreating.php</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>DisciplineModyController</servlet-name>
         <servlet-class>controllers.DisciplineModyController
@@ -114,7 +123,6 @@
         <servlet-name>DisciplineModyController</servlet-name>
         <url-pattern>/admin/disciplinesModifying.php</url-pattern>
     </servlet-mapping>
-
 
     <servlet>
         <servlet-name>StudentCreateController</servlet-name>
@@ -126,7 +134,6 @@
         <url-pattern>/admin/studentsCreating.php</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>StudentModyController</servlet-name>
         <servlet-class>controllers.StudentModyController
@@ -136,7 +143,6 @@
         <servlet-name>StudentModyController</servlet-name>
         <url-pattern>/admin/studentsModifying.php</url-pattern>
     </servlet-mapping>
-
 
     <servlet>
         <servlet-name>StudentsListController</servlet-name>
@@ -225,7 +231,7 @@
 		<servlet-class>controllers.ErrorController
 		</servlet-class>
 	</servlet>
-	<servlet-mapping>
+    <servlet-mapping>
 		<servlet-name>ErrorController</servlet-name>
 		<url-pattern>/error.php</url-pattern>
 	</servlet-mapping>
@@ -234,10 +240,7 @@
 		<url-pattern>/pageNotFound.php</url-pattern>
 	</servlet-mapping>
 
-
 	<!-- Filters -->
-
-
 	<filter>
 		<filter-name>WebtasksCharsetFilter</filter-name>
 		<filter-class>filters.WebtasksCharsetFilter

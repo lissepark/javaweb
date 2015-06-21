@@ -39,10 +39,17 @@ public class TermListController extends AbstractWebtasksServletHandler{
         TermService termService = new TermServiceImpl();
         List<Term> termList = termService.getTerms();
         request.setAttribute("terms", termList);
-
-        String strId = request.getParameter("chooser");
-        if(strId==null){gotoToJSP("/main/term/termsList.jsp", request, response);}
-        int id = Integer.valueOf(strId);
+        int id = 0;
+        Integer idTerm = (Integer) request.getAttribute("id_term");
+        if (idTerm != null) {
+            id = idTerm;
+        } else {
+            String strId = request.getParameter("chooser");
+            if (strId == null) {
+                gotoToJSP("/main/term/termCreatingModifying.jsp", request, response);
+            }
+            id = Integer.valueOf(strId);
+        }
         TermService termService2 = new TermServiceImpl();
         Term selectedTerm = termService2.getById(id);
         request.setAttribute("selectedTerm", selectedTerm);

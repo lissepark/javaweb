@@ -6,7 +6,7 @@
         <a href="${CONTEXT}${CURRENT_MAPPING}/studentsList.php"><p>STUDENTS</p></a>
         </div>
         <div class="divmenu113">
-            Info about students (names, groups, dates of entry, progress).
+            Info about students (names, groups, dates of joining, progress).
         </div>
     </div>
     <div class="divmenu11">
@@ -16,17 +16,17 @@
         <a href="${CONTEXT }${CURRENT_MAPPING}/disciplinesList.php"><p>SUBJECTS</p></a>
         </div>
         <div class="divmenu113">
-            List of disciplines (names)
+            List of subjects
         </div>
     </div>
     <div class="divmenu11">
         <div class="divmenu1113">
         </div>
         <div class="divmenu112">
-            <a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php"><p>SEMESTERS</p></a>
+            <a href="${CONTEXT}${CURRENT_MAPPING}/termsList.php"><p>MARKING PERIODS</p></a>
         </div>
         <div class="divmenu113">
-            Info about semesters: name, long, which disciplines in each.
+            Info about marking periods: duration, which subjects included.
         </div>
     </div>
     <div class="clear"></div>

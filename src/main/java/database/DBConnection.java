@@ -174,7 +174,7 @@ public class DBConnection {
                 r.setName(rs.getString("name"));
                 r.setSecond_name(rs.getString("lastname"));
                 r.setGroup(rs.getString("group"));
-                r.setDate(rs.getTimestamp("date"));
+                r.setDate(rs.getDate("date"));
                 result.add(r);
             }
         } catch (SQLException e) {
@@ -473,7 +473,7 @@ public class DBConnection {
                 result.setId(rs.getInt("id"));
                 result.setSecond_name(rs.getString("lastname"));
                 result.setGroup(rs.getString("group"));
-                result.setDate(rs.getTimestamp("date"));
+                result.setDate(rs.getDate("date"));
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -46,7 +46,6 @@ public class TermModyController extends AbstractWebtasksServletHandler {
         String strId = request.getParameter("id");
         String strDuration = request.getParameter("duration");
         String name = request.getParameter("term_name");
-
         if(strId==""){forwardRequest("/admin/termsList.php", request, response);}
         int id = Integer.valueOf(strId);
 
@@ -57,7 +56,6 @@ public class TermModyController extends AbstractWebtasksServletHandler {
         if(!delTermDisc.deleteTermDiscipline(id)){
             forwardRequest("/admin/termsList.php",request,response);
         }
-
         String[] disciplines = request.getParameterValues("multi_list[]");
         List<Integer> discipline = new LinkedList<Integer>();
         Discipline disc = new Discipline();
@@ -66,14 +64,15 @@ public class TermModyController extends AbstractWebtasksServletHandler {
             delTermDisc.insertTermDiscipline(id,idDisc);
             discipline.add(idDisc);
         }
-
         TermService termService = new TermServiceImpl();
         Term term = new Term();
         term.setId(id);
         term.setDuration(duration);
         term.setName(name);
         if(termService.modifing(term)){
-            forwardRequest("/admin/termsList.php",request,response);
+        request.setAttribute("id_term",id);
+        request.setAttribute("disciplines", discipline);
+            forwardRequest("/admin/termsList.php", request, response);
         } else {
             System.out.println("TermModyfException");
             //gotoToJSP

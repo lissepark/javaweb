@@ -76,13 +76,12 @@ function toggle(chkBox) {
 	}
 }
 
-function deleteDiscipline() {
-	var item = $("input[type=checkbox]:checked");
-	if (item.length == 0) {
-		alert("Please select discipline");
-		return;
-	}
-
+function deleteDiscipline(value1) {
+    var item = document.getElementById(value1);
+	//if (item.length == 0) {
+	//	alert("Please select discipline");
+	//	return;
+	//}
 	var id = $(item).attr("id");
 	console.log(id);
 	console.log("id=" + id);
@@ -95,24 +94,19 @@ function deleteDiscipline() {
 
 }
 
-function modifyingDiscipline() {
-	var item = $("input[type=checkbox]:checked");
-	if (item.length == 0) {
-		alert("Please select discipline");
-		return;
-	}
-
-	var id = $(item).attr("id");
-	console.log(id);
-	console.log("id=" + id);
-	var form = '<form id="modifyingDisciplineForm" action="'
-			+ context
-			+ '/admin/disciplinesModifying.php" method="get">' +
+function modifDiscipline(id) {
+    var items = document.getElementById(id);
+    var id = $(items).attr("id");
+    console.log(id);
+    console.log("id=" + id);
+    var form = '<form id="modifyingDisciplineForm" action="'
+        + context
+        + '/admin/disciplinesModifying.php" method="get">' +
         '<input type="hidden" name="id" />' +
         '</form>';
-	$("body").append(form);
-	$('#modifyingDisciplineForm input').val(id);
-	$('#modifyingDisciplineForm').submit();
+    $("body").append(form);
+    $('#modifyingDisciplineForm input').val(id);
+    $('#modifyingDisciplineForm').submit();
 }
 
 function createDiscipline() {
@@ -126,7 +120,6 @@ function createDiscipline() {
 
 function modifyingTerm() {
 	var id = document.getElementById("opening_list").value;
-
 	console.log(id);
 	console.log("id =" + id);
 	var form = '<form id="termModifyingForm" action="'

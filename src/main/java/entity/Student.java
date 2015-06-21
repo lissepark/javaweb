@@ -4,8 +4,6 @@ import java.util.Date;
 
 public class Student extends AbstractModelIdName{
 
-	private static final long serialVersionUID = -5638726927853322152L;
-	
 	private String second_name;
 	private	String group;
 	private Date date;

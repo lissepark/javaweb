@@ -1,24 +1,22 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<div class="link_container">
-	<table>
-		<tr>
-			<td><a href="${CONTEXT}${CURRENT_MAPPING}/home.php">На главную</a></td>
-			<td><a href="${CONTEXT}${CURRENT_MAPPING}/disciplinesList.php">Назад</a></td>
-		</tr>
-	</table>
-</div>
-
-<div class="student_creating_container ">
+<div class="disciplines_List_container">
+	<div class="mainBack">
+		<a href="${CONTEXT}${CURRENT_MAPPING}/home.php">To Main</a>
+     </div>
+    <div class="mainBack">
+        <a href="${CONTEXT}${CURRENT_MAPPING}/disciplinesList.php">Back</a>
+	</div>
+    <div class="clear"></div>
 
 	<div class="main_line">
 		<c:choose>
 			<c:when test="${CURRENT_BUTTON eq 1}">
-                Для того что создать новую дисциплину заполните все поля и нажмите кнопку "Создать".
+                To add subject please fill all the fields and press the button "Add".
             </c:when>
             <c:otherwise>
-                Для того чтобы модифицировать дисциплину введите новое значение и нажмите кнопку "Применить".
+                To modify please write new data and press the button "Submit".
             </c:otherwise>
 		</c:choose>
 	</div>
@@ -37,7 +35,7 @@
 
 	<table style="line-height: 50px">
 		<tr>
-			<td width="60px">Название</td>
+			<td>Name</td>
 			<td style="padding-left: 30px">
                 <input type="text" name="name"
 				maxlength="50" size="35" class="text"  value="${discipline.name }">
@@ -49,10 +47,10 @@
 			<td></td>
 			<td style="padding-left: 32px" height="50px"><c:choose>
 					<c:when test="${CURRENT_BUTTON eq 1}">
-						<input type="submit" value="Создать" id="button">
+						<input type="submit" value="Add" id="button">
 					</c:when>
 					<c:otherwise>
-						<input type="submit" value="Применить" id="button">
+						<input type="submit" value="Submit" id="button">
 					</c:otherwise>
 				</c:choose></td>
 		</tr>

@@ -2,20 +2,29 @@
 
 /* =Global Elements
 -------------------------------------------------------------- */
-td {
-    background-color: azure;
+.a_logout{
+    font-size: 16px;
+    text-decoration: none;
+    color:#838B83;
+    font-family: sans-serif;
+}
+
+.test_info p{
+    font-size: 14px;
+    line-height: 0.5;
+    color:#838B83;
 }
 
 table#table_for_error_message {
-	width: 100%;
-	line-height: 120px;
+	width: 400px;
+    height: 40px;
 }
 
 .error_message {
 	color: red;
 	font-family: sans-serif;
 	font-style: italic;
-	font-size: large;
+	font-size: 18px;
 	text-align: left;
 }
 
@@ -27,15 +36,13 @@ table#table_for_error_message {
 	font-family: cursive;
 }
 
-div.link_container {
-	margin: 50px 0 0 20px;
+.linkTermMain{
+    text-decoration: none;
+    color:#838B83;
+    font-size: 14px;
+    font-style: italic;
+    font-family: sans-serif;
 }
-
-.link_container table {
-	width: 200px;
-	font-size: small;
-}
-
 /* =Input and button 
 -------------------------------------------------------------- */
 .text {
@@ -46,20 +53,42 @@ div.link_container {
 	width: 190px;
 }
 
-input .button_long_name {
-	width: 100%;
-	height: 35px;
-	font-family: cursive;
-	background-color: #CDC9C9;
-	border-color: #838B8B
+input.button_long_name {
+     width: 50%;
+     height: 50px;
+     font-family: cursive;
+     font-size: 16px;
+     background-color: #CDC9C9;
+     border-color: #838B8B;
+     color:#222222;
+}
+
+input.buttonModDelDisc {
+    width: 100%;
+    height: 35px;
+    font-family: cursive;
+    font-size: 16px;
+    background-color: #CDC9C9;
+    border-color: #838B8B;
+    color:#222222;
+}
+
+input.button_long_name:hover{
+    cursor: pointer;
 }
 
 input#button_short_name {
-	width: 250px;
-	height: 35px;
+	width: 50%;
+	height: 50px;
 	font-family: cursive;
+    font-size: 16px;
 	background-color: #CDC9C9;
-	border-color: #838B8B
+	border-color: #838B8B;
+    color:#222222;
+}
+
+input#button_short_name:hover {
+    cursor: pointer;
 }
 
 input#button {
@@ -96,41 +125,98 @@ select#multi_list {
 	width: 200px;
 }
 
-select .opening_list {
-	border-color: #C1CDCD;
-	border-style: inset;
-	border-width: 2px;
-	padding: 0 0 0 5px;
-	width: 200px;
-	height: 28px;
-	font-family: cursive;
-}
-
 /* =Style for login-page
 -------------------------------------------------------------- */
 
 
 /* =Style for terms-pages
 -------------------------------------------------------------- */
-.terms_list_container {
-	margin: 10px auto auto 30px;
-	width: 840px;
-    border:1px solid black;
-}
-
-table#small_font_100_380 {
-	line-height: 100px;
-	font-size: small;
-	width: 380px;
-	border-color: #D1EEEE;
-}
-
 .main_line {
-	font-size: 19px;;
-	line-height: 80px;
-	white-space: nowrap;
+	font-size: 16px;
+    font-style:normal;
+    font-family: Verdana;
+	height: 40px;
+	width: auto;
+    margin-top:20px;
 }
 
+.test_09{
+    border:none;
+    margin-top:10px;
+    padding: 0px;
+}
+
+.nameDisc1{
+    border-bottom:1px solid blue;
+    margin-top:15px;
+    margin-bottom: 10px;
+    margin_left:5px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.listAllDisc{
+    border:none;
+    margin-top:5px;
+    padding: 0px;
+}
+
+.name_list_disc{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+    border-bottom:1px solid blue;
+}
+
+.choose{
+    border-top:1px solid blue;
+    margin-top:5px;
+    padding: 0px;
+    width:800px;
+}
+
+.title_choose_semester{
+    border:none;
+    margin-top:5px;
+    padding: 0px;
+    width:500px;
+    float:left;
+}
+.choose_button{
+    border-bottom:1px solid blue;
+    margin-top:5px;
+    padding:0px 0px 10px 0px;
+    width:500px;
+}
+
+.disciplineName{
+    border-bottom:1px solid blue;
+    width: 400px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.chooser_semester{
+    border:none;
+    margin-top:5px;
+    padding: 0px;
+    width:500px;
+}
+
+.mainTerm{
+    width: 840px;
+    margin:auto;
+    border:none;
+}
 /* =Style for title-page
 -------------------------------------------------------------- */
 .title_page_container {
@@ -146,25 +232,65 @@ table#small_font_100_380 {
 
 /* =Style for student-page
 -------------------------------------------------------------- */
-.student_list_container {
-	margin: 10px auto auto 30px;
-	width: 840px;
-    border:1px solid black;
-}
-
 .student_creating_container {
 	margin: -52px auto;
 	width: 840px;
 }
 
-table#student_list_table {
-	font-size: small;
-	margin-top: 10px;
-	border-color: #D1EEEE;
+.selSemMarks{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    padding-bottom:2px;
+    font-size:14px;
+    font-style:italic;
+    font-family: Verdana;
+    color:#555555;
 }
 
-.student_list_container table#student_list_table tr,th {
-	padding-bottom: 20px;
+.butDelStud{
+    margin-top: 10px;
+    border-bottom: 1px solid blue;
+    margin-bottom: 20px;
+    padding-bottom:8px;
+}
+
+.butDelStud div{
+    font-size:14px;
+    font-style:italic;
+    font-family: Verdana;
+    color:#555555;
+    padding-bottom:8px;
+}
+
+#student_list_table{
+    margin-top: 10px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#student_list_table th{
+	font-size: 16px;
+	margin-top: 10px;
+    border:1px solid blue;
+    color:black;
+    font-size:14px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    border-collapse: collapse;
+}
+
+#student_list_table td{
+    font-size: 14px;
+    margin-top: 10px;
+    border:1px solid yellow;
+    color:black;
+    font-size:14px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    border-collapse: collapse;
 }
 
 .student_creating_container  table {
@@ -172,14 +298,103 @@ table#student_list_table {
 	font-size: small;
 }
 
+.studProgress{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:700px;
+}
+
+.studProgress table,th,tr,td{
+    border-collapse: collapse;
+}
+
+.studProgress div{
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    margin-top: 10px;
+}
+
+.tablProgrStud{
+    border:1px solid blue;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablProgrStud2{
+    border:1px solid blue;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+}
+
+.tablProgrStud td,th,tr{
+    border:1px solid blue;
+    padding-left:5px;
+    height: 30px;
+}
+
+.tablProgrStud2 td,th,tr{
+    border:1px solid blue;
+    padding-left: 15px;
+    height: 30px;
+}
+
 /* =Style for Discipline-page
 -------------------------------------------------------------- */
 .disciplines_List_container {
 	margin: 10px auto auto 30px;;
-	width: 840px;
-    border:1px solid black;
+	width: 740px;
+    margin:auto;
 }
 
+.disc_list{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+.all_tabl{
+    border:none;
+}
+
+.line_disc{
+    float:left;
+    border-bottom:1px solid green;
+    width:60%;
+    margin:5px 0px 5px 0px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: Helvetica;
+    padding-left: 10px;
+    height: 30px;
+}
+.modify{
+    float:left;
+    border:1px solid blue;
+    margin:5px 0px 5px 5px;
+}
+.del{
+    float:left;
+    border:1px solid red;
+    margin:5px 0px 5px 10px;
+}
+
+.head_name_disc{
+    height:40px;
+    padding-left: 80px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: sans-serif;
+    border:none;
+}
+/*
 .ui-widget {
 	width: 230px;
 	height: 250px;

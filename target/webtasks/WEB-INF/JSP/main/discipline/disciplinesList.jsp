@@ -1,71 +1,51 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<div class="link_container">
-	<table>
-		<tr>
-			<td><a href="${CONTEXT}${CURRENT_MAPPING}/home.php">На
-					главную</a></td>
-		</tr>
-	</table>
-</div>
-
 <div class="disciplines_List_container">
-	<div style="padding-left: 30px; font-size: larger; height: 60px">Список
-		дисциплин</div>
+    <div class="linkTermMain">
+        <a href="${CONTEXT}${CURRENT_MAPPING}/home.php">To Main</a>
+    </div>
+    <c:if test="${CURRENT_ROLE eq 1}">
+        <div>
+            <input type="submit" class="button_long_name" onclick="createDiscipline()"
+                value="Add Subject">
+        </div>
+    </c:if>
 
-	<table>
-		<tr>
-			<td style="padding-left: 30px; width: 430px;">
-                <table
-					cellspacing="0" cellpadding="3" id="small_font_100_380" border="1">
-					<tr bgcolor="#DCDCDC" align="left" style="border-color: #8B8989;">
-						<c:if test="${CURRENT_ROLE eq 1}">
-							<th width="10%">&nbsp;</th>
-						</c:if>
-						<th width="320px">Наименование дисциплины</th>
-					</tr>
+        <div class="disc_list">
+            Disciplines list
+        </div>
 
-					<c:forEach var="discipline" items="${disciplines }">
-						<tr>
-							<c:if test="${CURRENT_ROLE eq 1}">
-                                <td align="right">
-                                    <input type="checkbox" name="id" id="${discipline.id }" onChange="toggle(this);">
-                                </td>
-							</c:if>
-							    <td align="left">
-							        <input type="text" name="name" value="${discipline.name}">
-                                </td>
-						</tr>
-					</c:forEach>
+        <div class="all_tabl">
+            <div class="head_name_disc">Name of Subject</div>
+            <c:forEach var="discipline" items="${disciplines }">
+            <div>
+                <div class="line_disc">
+                        ${discipline.name}
+                </div>
+                <c:if test="${CURRENT_ROLE eq 1}">
+                    <div class="modify">
+                        <input type="submit" name="id" id="${discipline.id }"
+                               class="buttonModDelDisc"
+                               onclick="modifDiscipline(id)"
+                               value="Modify">
+                    </div>
+                    <div class="del">
+                        <input type="submit" name="value1" value="Delete"
+                                class="buttonModDelDisc"
+                                onclick="deleteDiscipline(${discipline.id })">
+                    </div>
+                </c:if>
+                <div class="clear"></div>
+            </div>
+            </c:forEach>
+        </div>
 
-				</table></td>
-
-			<td valign="top" align="left" style="padding: 0"><c:if
-					test="${CURRENT_ROLE eq 1}">
-					<table cellspacing="0">
-
-						<tr>
-							<td style="padding-bottom: 20px; padding-top: 0"><input
-								type="submit" id="button_long_name" onclick="createDiscipline()"
-								value="Создать дисциплину..."></td>
-						</tr>
-
-						<tr>
-							<td style="padding-bottom: 20px"><input type="submit"
-								id="button_long_name" onclick="modifyingDiscipline()"
-								value="Модифицировать выбранную дисциплину..."></td>
-						</tr>
-
-						<tr>
-							<td style="padding-bottom: 20px"><input type="submit"
-								id="button_long_name" value="Удалить выбранную дисциплину..."
-								onclick="deleteDiscipline()"></td>
-						</tr>
-
-					</table>
-				</c:if></td>
-		</tr>
-	</table>
+        <c:if test="${CURRENT_ROLE eq 1}">
+                <div>
+                    <input type="submit" class="button_long_name" onclick="createDiscipline()"
+                            value="Add Subject">
+                </div>
+        </c:if>
 
 </div>

@@ -5,17 +5,17 @@
 
     <script>
         function validate(){
-            var x=document.forms["form"]["login"].value;
+            var x=document.forms["form"]["username"].value;
             var y=document.forms["form"]["password"].value;
             if (x.length>0 && x.length<3 || x.length>10){
-                document.getElementById("validlogin").innerHTML="Логин должен содержать не менее 3-х "+
-                "и не более 10-ти символов";
+                document.getElementById("validlogin").innerHTML="Login should contain not less then 3 symbols "+
+                "and not more then 10 symbols";
                 document.getElementById("popup").style.padding="5px";
                 document.getElementById("loginInput").style.border="1px solid black";
                 document.getElementById("loginInput").style.backgroundColor="red";
                 return false;}
             else if (x.length==0){
-                document.getElementById("validlogin").innerHTML="данное поле обязательно для заполнения";
+                document.getElementById("validlogin").innerHTML="this field has to be filled";
                 document.getElementById("popup").style.padding="5px";
                 document.getElementById("loginInput").style.border="1px solid black";
                 document.getElementById("loginInput").style.backgroundColor="red";
@@ -28,14 +28,14 @@
                 document.getElementById("loginInput").style.backgroundColor="green";
             }
             if (y.length>0 && y.length<3 || y.length>10){
-                document.getElementById("validpass").innerHTML="Пароль должен содержать не менее 3-х "+
-                "и не более 10-ти символов";
+                document.getElementById("validpass").innerHTML="Password should contain not less then 3 symbols "+
+                "and not more then 10 symbols";
                 document.getElementById("popup").style.padding="5px";
                 document.getElementById("passInput").style.border="1px solid black";
                 document.getElementById("passInput").style.backgroundColor="red";
                 return false;}
             else if (y.length==0){
-                document.getElementById("validpass").innerHTML="данное поле обязательно для заполнения";
+                document.getElementById("validpass").innerHTML="this field has to be filled";
                 document.getElementById("popup").style.padding="5px";
                 document.getElementById("passInput").style.border="1px solid black";
                 document.getElementById("passInput").style.backgroundColor="red";
@@ -53,45 +53,56 @@
     <div id="parent_popup">
         <div id="popup">
             <div class="form1">
+                <div class="test_info">
+                    <p>To have access to the site please log in and put your password,and select role</p>
+                    <p>Test accounts:
+                        <p>1. Admin: "login" = sergii, "password" = 12345</p>
+                        <p>2. Student: "login" = anna, "password" = 23456</p>
+                    </p>
+                    <p>Account "sergii" has been supported both roles</p>
+                </div>
                 <form name="form" action="${CONTEXT }/login.php" method="post" onsubmit="return validate()">
-                    <table>
-                        <tr>
-                            <td class="tdlogin">
+                    <div>
+                        <div>
+                            <div class="tdlogin">
                                 LOGIN:
-                            </td>
-                            <td class="tdlogin">
+                            </div>
+                            <div class="tdlogin2">
                                 <input type="text" name="username" id="loginInput" /><br>
-                            </td>
-                            <td id="validlogin"></td>
-                        </tr>
-                        <tr>
-                            <td class="tdlogin">
+                            </div>
+                            <div id="validlogin"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <div class="tdlogin">
                                 PASSWORD:
-                            </td>
-                            <td class="tdlogin">
+                            </div>
+                            <div class="tdlogin2">
                                 <input type="text" name="password" id="passInput" />
-                            </td>
-                            <td id="validpass"></td>
-                        </tr>
+                            </div>
+                            <div id="validpass"></div>
+                            <div class="clear"></div>
+                        </div>
 
-                        <table id="login_table">
-                            <tr>
-                                <td>Выбрать роль:</td>
-                                <td>
+                        <div id="login_table">
+                            <div>
+                                <div>Select role:</div>
+                                <div>
                                     <select name="role" id="opening_list">
-                                        <option value="1">Администратор</option>
-                                        <option value="2">Студент</option>
+                                        <option value="1">Admin</option>
+                                        <option value="2">Student</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr height="60">
-                                <td>&nbsp</td>
-                                <td><input type="submit" value="войти" id="button"></td>
-                            </tr>
-                        </table>
-
-                    </table>
+                                </div>
+                            </div>
+                            <div height="60">
+                                <div>&nbsp</div>
+                                <div><input type="submit" value="ENTER" id="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
                     <jsp:include page="modules/validationMessage.jsp" />
+                    </div>
                 </form>
                 <%
                     Integer c = (Integer) request.getAttribute("a");
@@ -105,7 +116,7 @@
                 <%
                 } else if (c == null) {
                 %>
-                Авторизируйтесь или зарегистрируйтесь.
+                Please log in.
                 <script>
                     var delay_popup = 1000;
                     setTimeout(
@@ -115,8 +126,7 @@
                 <%
                 } else if (c > 0) {
                 %>
-                Неверный логин или пароль. Повторите авторизацию или
-                зарегистрируйтесь.
+               Wrong login or password. Please try again or register.
                 <script>
                     var delay_popup = 1000;
                     setTimeout(
@@ -127,10 +137,6 @@
                     }
                 %>
             </div>
-        </div>
-        <div align="right" style="position: fixed; right: 20px; bottom: 0px;">
-            <p>Тестовые аккаунты: "admin / password" , "sergii / 12345"</p>
-            <p>Аккаунт "admin" поддерживает обе роли</p>
         </div>
     </div>
 
